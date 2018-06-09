@@ -31,7 +31,8 @@ a:visited {
     border-radius: 160px;
     background: url('https://avatars0.githubusercontent.com/u/6144489?s=460&v=4');
     background-size: 130%;
-		margin-top: 50px;
+	margin-top: 50px;
+	background-position: bottom left;
 }
 
 
