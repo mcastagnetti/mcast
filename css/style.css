@@ -43,7 +43,7 @@ h1 {
 .container::before {
   content: " ";
   flex: 1 1 auto;
-  min-height: 25vh;
+  min-height: 20vh;
   height: auto;
 }
 
