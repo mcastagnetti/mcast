@@ -11,9 +11,6 @@ li {
 body {
   font-size: 14px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
 }
 
@@ -28,6 +25,15 @@ h1 {
 
 .container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container::before {
+  content: " ";
+  flex: 1 1 auto;
+  min-height: 25vh;
+  height: auto;
 }
 
 .picture {
