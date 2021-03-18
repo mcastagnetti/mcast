@@ -1,3 +1,10 @@
+:root {
+  --title-color: #6598c5;
+  --text-color: #707070;
+  --hover-color: #3f3f3f;
+  --background-color: #ffffff;
+}
+
 header,
 a,
 img,
@@ -12,14 +19,11 @@ body {
   font-size: 14px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   min-height: 100vh;
-}
-
-a:visited {
-  color: rgb(101, 152, 197);
+  background-color: var(--background-color);
 }
 
 h1 {
-  color: rgb(101, 152, 197);
+  color: var(--title-color);
   margin: 0;
 }
 
@@ -47,14 +51,15 @@ h1 {
   background-position: bottom left;
 }
 
-.logo {
+.me {
   text-align: center;
   position: relative;
 }
 
-.logo p {
+.me p {
   margin: 0;
-  color: #c8c8c9;
+  color: var(--text-color);
+  font-size: 1.3rem;
 }
 
 .social {
@@ -62,14 +67,14 @@ h1 {
   font-size: 1rem;
   width: 100%;
   text-align: center;
-  color: #ccc;
+  color: var(--text-color);
   left: 0;
 }
 
 .social a {
-  color: #ccc;
+  color: var(--text-color);
 }
 
 .social a:hover {
-  color: #777;
+  color: var(--hover-color);
 }
