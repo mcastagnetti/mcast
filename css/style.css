@@ -2,7 +2,8 @@
   --title-color: #00adb5;
   --text-color: #e2e2e2;
   --hover-color: var(--title-color);
-  --background-color: #222831;
+  --background-color-start: rgba(0, 0, 0, 1);
+  --background-color-stop: rgba(8, 17, 11, 0.9);
 }
 
 header,
@@ -16,10 +17,16 @@ li {
 }
 
 body {
+  margin: 0;
   font-size: 14px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   min-height: 100vh;
-  background-color: var(--background-color);
+  background: var(--background-color-start);
+  background: linear-gradient(
+    10deg,
+    var(--background-color-start) 0%,
+    var(--background-color-stop) 100%
+  );
 }
 
 h1 {
