@@ -63,13 +63,14 @@ h1 {
   position: relative;
 }
 
-.me p {
+.me h2 {
   margin: 0;
   color: var(--text-color);
   font-size: 1.3rem;
+  font-weight: normal;
 }
 
-.social {
+nav {
   margin-top: 1.5rem;
   font-size: 1rem;
   width: 100%;
@@ -79,10 +80,22 @@ h1 {
   left: 0;
 }
 
-.social a {
+nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav span {
+  margin: 0 0.5rem;
+}
+
+nav a {
   color: var(--text-color);
 }
 
-.social a:hover {
+nav a:hover {
   color: var(--hover-color);
 }
